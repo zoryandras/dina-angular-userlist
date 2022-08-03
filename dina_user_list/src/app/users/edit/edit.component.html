@@ -1,0 +1,14 @@
+<div class="container">
+    <legend>Edit Item</legend>
+    <form>
+        <div class="mb-3">
+            <label for="firstname" class="form-label">First name:</label>
+            <input type="text" name="firstname" [(ngModel)]="userForm.first_name" class="form-control" id="firstame"/>
+        </div>
+        <div class="mb-3">
+            <label for="lastname" class="form-label">Last name:</label>
+            <input type="text" name="lastname" [(ngModel)]="userForm.last_name" class="form-control" id="lastname" />
+        </div>
+        <button type="button" (click)="update()" class="btn btn-primary">Update</button>
+    </form>
+</div>
